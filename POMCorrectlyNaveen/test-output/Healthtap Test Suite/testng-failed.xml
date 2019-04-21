@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Healthtap Test Suite]">
+  <test name="Test cases for Healthtap regression">
+    <classes>
+      <class name="com.htap.qa.testcases.LoginPageTest"/>
+      <class name="com.htap.qa.testcases.HomePageTest"/>
+      <class name="com.htap.qa.testcases.AppointmentPageTest"/>
+    </classes>
+  </test> <!-- Test cases for Healthtap regression -->
+  <test name="Test cases for Healthtap regression(failed)">
+    <classes>
+      <class name="com.htap.qa.testcases.HomePageTest">
+        <methods>
+          <include name="clickTask"/>
+          <include name="checkUserlabel"/>
+          <include name="setup"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="clickAppt"/>
+          <include name="verifylogo"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.HomePageTest -->
+      <class name="com.htap.qa.testcases.AppointmentPageTest">
+        <methods>
+          <include name="checkShowMore"/>
+          <include name="checkPastSection"/>
+          <include name="checkUpcomingsection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.AppointmentPageTest -->
+      <class name="com.htap.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginPageTitleTest"/>
+          <include name="testLogo"/>
+          <include name="checkLogin"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test cases for Healthtap regression(failed) -->
+</suite> <!-- Failed suite [Healthtap Test Suite] -->

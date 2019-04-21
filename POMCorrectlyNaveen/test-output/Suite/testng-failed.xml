@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.htap.qa.testcases.LoginPageTest"/>
+      <class name="com.htap.qa.testcases.HomePageTest"/>
+      <class name="com.htap.qa.testcases.AppointmentPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.htap.qa.testcases.AppointmentPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.AppointmentPageTest -->
+      <class name="com.htap.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.LoginPageTest -->
+      <class name="com.htap.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.htap.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

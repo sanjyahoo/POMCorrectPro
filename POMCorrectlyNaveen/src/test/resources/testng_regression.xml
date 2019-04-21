@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Healthtap Test Suite" parallel="false">
+  <test name="Test cases for Healthtap regression">
+    <classes>
+      <class name="com.htap.qa.testcases.LoginPageTest"/>
+      <class name="com.htap.qa.testcases.HomePageTest"/>
+      <class name="com.htap.qa.testcases.AppointmentPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
